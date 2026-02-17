@@ -3,6 +3,7 @@
 import yfinance as yf # fetch financial data from yahoo finace api
 import pandas as pd #data manipulation and analysis library
 from datetime import datetime # for working with datas and times
+from config import S3_BUCKET_NAME, S3_RAW_DATA_PREFIX, TICKERS, DATA_PERIOD
 
 print('Fetching Bitcoin data...')
 btc = yf.Ticker("BTC-USD")
